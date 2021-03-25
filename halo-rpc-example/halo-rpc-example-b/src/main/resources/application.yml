@@ -1,0 +1,10 @@
+server:
+  port: 8898
+spring:
+  application:
+    name: example-b
+
+halo:
+  rpc:
+    enable: true
+    port: 3344

@@ -1,0 +1,10 @@
+server:
+  port: 8899
+spring:
+  application:
+    name: example-a
+
+halo:
+  rpc:
+    enable: true
+    port: 7788
