@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -27,9 +28,9 @@ public class App {
 	}
 
 	@GetMapping("/calculation")
-	public int calculation() {
+	public int calculation(@RequestParam(value = "a") int a, @RequestParam(value = "b") int b) {
 
-		return demoService.calculation(1, 2);
+		return demoService.calculation(a, b);
 	}
 
 }

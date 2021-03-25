@@ -6,5 +6,5 @@ spring:
 
 halo:
   rpc:
-    enable: true
-    port: 7788
+    enable: true #是否启动远程服务调用
+    port: 7788 #服务监听端口
